@@ -1,0 +1,166 @@
+{% load static%}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/soop/static/css/style.css" type="text/css">
+    <title>Web</title>
+</head>
+<body background="Hospital-Management-System-1">
+    <nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">TMH</a> </div>
+			<ul>
+				<li><a href="home">Home</a></li>
+				<li><a href="about">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+	</nav>
+
+    <h1 class="heading">Welcome to <br/><span class="track">Track My Health</span></h1>
+    <p class="para">This website has been developed by us to track patients Medical history.</p>
+    <main>
+        {%block content%}
+        {%endblock%}
+    </main>
+   
+
+ 
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+<style ="text/css">
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: rgba(63, 127, 155, 0.711); font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+
+
+    footer{
+		position: absolute;
+		color:rgb(5, 35, 61);
+		bottom:0;
+		width:100%;
+		text-align:center;		
+	}
+
+
+    .heading{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .track{
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .para{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .box{
+        background-color: rgb(30, 140, 162);
+        background-size: cover;
+        width: 40vh;
+        height: 40vh;
+        margin: 0 auto;
+        width: 40vh;
+        margin-top: 50px;
+        bottom: 0;
+        position: relative;
+        
+    }
+
+    .button{
+        position: absolute;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 20px;
+        border-radius: 10px;
+        bottom: 50px;
+        margin: 0 auto;
+        padding-right:50px;
+        padding-left: 50px;
+        margin-left: 50px;
+    }
+    .imgs{
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+
+    .doclogo{
+        width:30%; 
+    }
+
+    .total-boxs{
+        text-align: center;
+    }
+
+    .button1{
+        padding:10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 20px;
+        border-radius: 10px;
+        margin-top: 9%;
+    }
+
+    .boxa{
+        border-style: solid;
+        width: 225px;
+        text-align: center;
+        padding: 10px;
+        height: 225px;
+        margin-top: 46%;
+        background-color:hsl(0, 0%, 90%);
+
+    }
+    .boxb{
+        border-style: solid;
+        width: 225px;
+        text-align: center;
+        padding: 10px;
+        height: 225px;
+        margin-top: 46%;
+        background-color:hsl(0, 0%, 90%);
+    }
+    .boxa,.boxb{
+        display: inline-block;
+        margin: 20px;
+    }
+</style>
+</html>
